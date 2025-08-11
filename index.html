@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Migration</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --link-color: #007BFF;
+      --bg-color: #f4f6f8;
+      --text-color: #333;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+      animation: slideUp 0.6s ease-out;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      animation: float 2.5s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .contact {
+      margin-top: 30px;
+      font-size: 1em;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8em; }
+      .icon { width: 60px; height: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">
+      <!-- Desktop SVG icon (similar to fa-desktop) -->
+      <svg fill="#3498db" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h240v32H208c-8.8 0-16 7.2-16 16s7.2 16 16 16h224c8.8 0 16-7.2 16-16s-7.2-16-16-16H352v-32h240c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM576 320H64V64h512v256z"/>
+      </svg>
+    </div>
+
+    <h1>We're Migrating to a New System</h1>
+    <p>Our website is currently offline while we upgrade our infrastructure.</p>
+    <p>We’ll be back online shortly with improved performance and reliability.</p>
+
+    <div class="contact">
+      <p><strong>Need Help?</strong></p>
+      <p><strong>Need Assistance?</strong></p>
+                  <p>Email: <a href="mailto:raman@atlas-om.com">raman@atlas-om.com</a></p>
+            <p>Phone: +968 9521 6372</p>
+    </div>
+  </div>
+</body>
+</html>
